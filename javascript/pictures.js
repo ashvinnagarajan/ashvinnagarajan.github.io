@@ -33,10 +33,10 @@ var imgArray = [
     "img/57.jpg",
     "img/58.jpg",
     "img/59.jpg",
-    "img/62.jpg",
-    "img/1.png",
-    "img/2.png",
-    "img/3.png",
+    "../img/62.jpg",
+    "../img/1.png",
+    "../img/2.png",
+    "../img/3.png",
     "../img/5.png"
 ];
 
