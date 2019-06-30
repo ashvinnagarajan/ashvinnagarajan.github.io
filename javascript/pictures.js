@@ -24,8 +24,6 @@ var imgArray = [
     "img/39.jpg",
     "img/43.jpg",
     "img/46.jpg",
-    "img/48.jpg",
-    "img/49.jpg",
     "img/50.jpg",
     "img/52.jpg",
     "img/53.jpg",
@@ -35,9 +33,9 @@ var imgArray = [
     "img/59.jpg",
     "img/62.jpg",
     "img/1.png",
-    "../img/2.png",
-    "../img/3.png",
-    "img/5.PNG"
+    "img/2.png",
+    "img/3.png",
+    "img/5.png"
 ];
 
 var picContainer = "#pics";
