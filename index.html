@@ -36,21 +36,36 @@
         </nav>
 
         <!-- // background-image: url(img/sig.png); -->
-        <div style="background-size: contain; padding: 6%; text-align: center; background-position: center; background-repeat: no-repeat; "> 
+        <div style="background-size: contain; padding: 7%; text-align: center; "> 
             <div>
                 <h2 id="Landing" style="font-size: 45px;">Hello! My name is</h2>
                 <h1 style="font-size: 60px; text-decoration: underline;">Ashvin Nagarajan</h1>
                 <br>
                 <h2 style="font-size: 45px;">I study Materials Science and Engineering</h2>
-                
                 <h2 style="font-size: 45px;">UCLA Class of 2022</h2>
-                <br>
             </div>
         </div>
 
-        <br><br><br>
+        <div class="jumbotron bg-primary" id="Facts" style="margin: 7%, 0%; color:white;">
+            <h1 class="display-3" style="text-align: center;">About Me!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <div class="showContainer">
+                <p class="showItem">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFacts" aria-expanded="false" aria-controls="collapseExample">
+                        Show More
+                    </button>
+                </p>
+                <div class="collapse" id="collapseFacts">
+                    <div class="card card-body" style="color:black;">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="container-fluid bg-primary" style="padding: 5%;">
+        <div class="container-fluid bg-primary" style="padding: 4%; margin: 7%; max-width: 84%;">
             <h1 class="display-3" id="Projects" style="color: white; text-align: center; padding-bottom: 2%; font-size: 45px;">Projects</h1>
             <div class="row">
                 <div class="col-sm">
@@ -63,9 +78,8 @@
                                 <p class="card-text">
                                     SMV is building a racecar that consumes fuel as efficiently as possible. Currently I am developing a custom data acquisition system
                                     to have real time data from the vehicle during a race. 
-                                    </br>
-                                    </br>  
                                 </p>
+                            </br>
                             </div>
                             <div class="card-body">
                                 <a href="https://www.bruinracing.com/smv/" class="card-link">Bruin Racing | SMV</a>
@@ -76,23 +90,44 @@
                         </div>
                 </div>
                 <div class="col-sm">
-                        <div class="card mb-3">
-                            <h3 class="card-header">UberKuber</h3>     
-                            <a href="img/BoozAllen.png">                
-                            <img style="height: 200px; width: 100%; display: block;" src="img/BoozAllen.png" alt="Card image">
-                            </a>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    My team is developing a cluster visualization tool for containerized applications using Kubernetes. We are responsible for developing an enterprise level tool to monitor the real time status of nodes and containers of a system. 
-                                </p>
-                            </div>
-                            <div class="card-body">
-                                <a href="https://www.boozallen.com/" class="card-link">Booz Allen Hamilton</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                28 August 2019
-                            </div>
+                    <div class="card mb-3">
+                        <h3 class="card-header">UberKuber</h3>     
+                        <a href="img/BoozAllen.png">                
+                        <img style="height: 200px; width: 100%; display: block;" src="img/BoozAllen.png" alt="Card image">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">
+                                My team is developing a cluster visualization tool for containerized applications using Kubernetes. We are responsible for developing an enterprise level tool to monitor the real time status of nodes and containers of a system. 
+                            </p>
                         </div>
+                        <div class="card-body">
+                            <a href="https://www.boozallen.com/" class="card-link">Booz Allen Hamilton</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            28 August 2019
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card mb-3">
+                        <h3 class="card-header">Golden State Solar Car</h3>
+                        <a href="img/GoldenState.png">
+                            <img style="height: 200px; width: 100%; display: block;" src="img/GoldenState.png" alt="Card image">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">
+                                My team is designing a four-passenger solar-powered vehicle for entry in the 2019 Bridgestone World Solar Challenge. I run finite element analysis on the composite shell using MSC Apex and Ansys to ensure safety and design standards. 
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <a href="https://goldenstatesolarteam.com/" class="card-link">Golden State Racing</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            29 August 2019
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm">
                     <div class="card mb-3">
@@ -127,25 +162,7 @@
                 </div>
             </div>
         </div>
-        
-        <div class="jumbotron bg-primary" id="Facts" style="margin: 7%; color:white;">
-            <h1 class="display-3" style="text-align: center;">About Me!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <div class="showContainer">
-                <p class="showItem">
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseFacts" aria-expanded="false" aria-controls="collapseExample">
-                        Button
-                    </button>
-                </p>
-                <div class="collapse" id="collapseFacts">
-                    <div class="card card-body" style="color:black;">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                    </div>
-                </div>
-            </div>
-        </div>
+      
 
        
 
