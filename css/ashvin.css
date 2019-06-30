@@ -1,27 +1,3 @@
-* { box-sizing: border-box; }
-
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-sizer,
-.grid-item {
-  width: 25%;
-}
-@media (max-width: 575px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
-}
 
 /* To change the amount of columns on larger devices, uncomment the code below */
 
@@ -44,15 +20,6 @@
   }
 } */
 
-.grid-item {
-  float: left;
-}
-
-.grid-item img {
-  display: block;
-  max-width: 100%;
-}
-
 .footer {
   margin-right: 20px;
 }
@@ -68,4 +35,8 @@ i {
 
 .showItem {
   align-self: center;
+}
+
+.main-project {
+  height: 500px;
 }

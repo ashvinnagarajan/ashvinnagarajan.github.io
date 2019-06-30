@@ -38,21 +38,50 @@ var imgArray = [
     "img/5.png"
 ];
 
+var arrayLength = 8;
 var picContainer = "#pics";
+var imgNum;
+var numArray = [];
 
 function append(img, container)
 {
     var tag = 
-        "<div class=\"grid-item\">" +
-            "<img src=\"" + img + "\"/>" + 
+        "<div class=\"card\">" +
+            "<img class=\"card-img-top\" alt=\"Sorry image not available\" style=\"height:100%;\" src=\"" + img + "\"/>" + 
         "</div>";
     $(container).append(tag);
 }
 
-for(var i = 0; i < imgArray.length;i++)
+function populate()
 {
-    append(imgArray[i], picContainer);
+    var num;
+
+    for (var i = 0; i < arrayLength; i++){
+        num = randInt();
+
+        while (numArray.includes(num))
+        {
+            num = randInt();
+        }
+
+        numArray[i] = num;
+    }
 }
 
+//Picks a random number between 0(inclusive) and imgArray.length() (exclusive)
+function randInt()
+{
+    var num;
+    num = (Math.random() * (imgArray.length-1))
+    num = num.toFixed(0);
 
+    return num;
+}
 
+populate();
+
+for(var i = 0; i < arrayLength; i++)
+{
+    imgNum = numArray[i];
+    append(imgArray[imgNum], picContainer);
+}
