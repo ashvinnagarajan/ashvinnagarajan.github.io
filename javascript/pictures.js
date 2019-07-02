@@ -85,3 +85,14 @@ for(var i = 0; i < arrayLength; i++)
     imgNum = numArray[i];
     append(imgArray[imgNum], picContainer);
 }
+
+function morePics(){
+    arrayLength = arrayLength + 8;
+    if (arrayLength > imgArray.length)
+    {
+        arrayLength = imgArray.length;
+    }
+    console.log(arrayLength);
+    populate();
+    append();
+}
