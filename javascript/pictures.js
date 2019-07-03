@@ -38,10 +38,12 @@ var imgArray = [
     "img/5.png"
 ];
 
+var initialLength = imgArray.length;
+var appendArray = [];
 var arrayLength = 8;
 var picContainer = "#pics";
 var imgNum;
-var numArray = [];
+var timesClicked = 1;
 
 function append(img, container)
 {
@@ -54,17 +56,14 @@ function append(img, container)
 
 function populate()
 {
-    var num;
+    var randNum;
 
     for (var i = 0; i < arrayLength; i++){
-        num = randInt();
+        randNum = randInt();
 
-        while (numArray.includes(num))
-        {
-            num = randInt();
-        }
+        appendArray[i] = imgArray[randNum];
 
-        numArray[i] = num;
+        imgArray.splice(randNum,1);
     }
 }
 
@@ -78,21 +77,28 @@ function randInt()
     return num;
 }
 
-populate();
-
-for(var i = 0; i < arrayLength; i++)
-{
-    imgNum = numArray[i];
-    append(imgArray[imgNum], picContainer);
+function main() {
+    for(var i = 0; i < arrayLength; i++)
+    {
+        append(appendArray[i], picContainer);
+    }
 }
 
+populate();
+main();
+
 function morePics(){
-    arrayLength = arrayLength + 8;
-    if (arrayLength > imgArray.length)
+
+    timesClicked += 1;
+
+    if ((timesClicked * appendArray.length) > initialLength)
     {
-        arrayLength = imgArray.length;
+        arrayLength = 0;
+
+        document.getElementById("showItem").textContent = "No More Pictures";
+        document.getElementById("showItem").disabled = true;
     }
-    console.log(arrayLength);
+
     populate();
-    append();
+    main();
 }

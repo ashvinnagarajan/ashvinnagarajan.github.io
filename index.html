@@ -151,20 +151,44 @@
             </div>
             <div class="row showContainer" >
                 <p class="showItem">
-                    <button class="btn btn-primary show-more" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="false" aria-controls="collapseExample">
-                        Button
+                    <button class="btn btn-primary show-more" id="moreProjects" onClick="moreProjects()" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="false" aria-controls="collapseExample">
+                        More Projects
                     </button>
                 </p>
                 <div class="collapse" id="collapseProjects">
-                    <div class="card card-body" style="color:black;">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <div class="card card-body bg-primary" style="color:black;">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card past-project mb-3">
+                                    <h3 class="card-header">Golden State Solar Car</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            My team is designing a four-passenger solar-powered vehicle for entry in the 2019 Bridgestone World Solar Challenge. I run finite element analysis on the composite shell using MSC Apex and Ansys to ensure safety and design standards. 
+                                        </p>
+                                    </div>  
+                                    <div class="card-body">
+                                        <a href="https://goldenstatesolarteam.com/" class="card-link">Golden State Racing</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card past-project mb-3">
+                                    <h3 class="card-header">Golden State Solar Car</h3>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            My team is designing a four-passenger solar-powered vehicle for entry in the 2019 Bridgestone World Solar Challenge. I run finite element analysis on the composite shell using MSC Apex and Ansys to ensure safety and design standards. 
+                                        </p>
+                                    </div>  
+                                    <div class="card-body">
+                                        <a href="https://goldenstatesolarteam.com/" class="card-link">Golden State Racing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
-      
-
-       
 
         <!--Contains all of the Pictures-->
         <div class="container-fluid bg-primary showContainer">
@@ -172,7 +196,7 @@
             <div class="card-columns" id="pics">
             </div> 
 
-            <button type="button" onClick="morePics()" class="btn btn-primary load-pics showItem">Show More Images</button>
+            <button type="button" onClick="morePics()" id="showItem" class="btn btn-primary load-pics showItem">Show More Images</button>
         </div>
     
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -203,5 +227,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="javascript/pictures.js"></script>
+        <script src="javascript/buttons.js"></script>
     </body>
 </html>
