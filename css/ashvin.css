@@ -69,11 +69,16 @@ path {
   stroke-width: 4.0;
   stroke-linejoin: round;
   stroke-linecap: butt;
+  opacity: 0;
+}
+
+path.animate {
+  opacity: 1;
 }
 
 .A {
   stroke-dasharray: 2000;
-  animation: write1 5s 1 ease-in;
+  animation: write1 4s 1 ease-in; 
 }
  
 .N {
@@ -84,53 +89,58 @@ path {
 
 .A-cross {
   stroke-dasharray: 230;
-  animation: write3 3.7s 1 ease-out;
+  animation: write3 4.2s 1 ease-out;
 }
  
  
 .Flourish {
   stroke-dasharray: 250;
-  animation: write4 4s 1 ease-in;
+  animation: write4 4.2s 1 ease-in;
 } 
 
 
 @keyframes write1 {
   0% {
     stroke-dashoffset: 2000;
-    opacity: 1;
   }
-  30% {
+  15% {
     stroke-dashoffset: 0;
     opacity: 1;
   }
-  95%, 100% {
-    opacity: 0;
+  50% {
+    opacity: 1;
   }
 }
 
 @keyframes write2 {
-  0%, 35% {
+  0%, 20% {
     stroke-dashoffset: 1300;
   }
-  60% {
+  40% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 
 @keyframes write3 {
-  0%, 70% {
+  0%, 45% {
     stroke-dashoffset: 230;
   }
-  90% {
+  60% {
     stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 
 @keyframes write4 {
-  0%, 95% {
+  0%, 52% {
     stroke-dashoffset: 250;
   }
-  100% {
+  60% {
     stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  0% {
+    opacity: 1;
   }
 } 
