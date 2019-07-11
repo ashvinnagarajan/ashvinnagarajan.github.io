@@ -49,7 +49,9 @@ function append(img, container)
 {
     var tag = 
         "<div class=\"card\">" +
+            "<a href=\"" + img + "\">" + 
             "<img class=\"card-img-top\" alt=\"Sorry image not available\" style=\"height:100%;\" src=\"" + img + "\"/>" + 
+            "</a>" +
         "</div>";
     $(container).append(tag);
 }
