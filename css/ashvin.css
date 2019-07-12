@@ -68,6 +68,23 @@ i {
   margin-top: 3%;
 }
 
+.welcome {
+  z-index: -10;
+  position: absolute;
+  top: 100px;
+  align-self: center;
+  background-size: contain; 
+  text-align: center; 
+}
+
+.signature {
+  z-index: 100;
+}
+
+#place-holder {
+  height: 500px;
+}
+
 path {
   stroke: #000000;
   stroke-width: 4.0;
