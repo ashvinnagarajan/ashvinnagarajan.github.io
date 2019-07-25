@@ -33,6 +33,7 @@ body {
   display: flex;
   background: none;
   color:white;
+  margin-bottom: 0rem;
 }
 
 .footer {
@@ -61,9 +62,12 @@ i {
   color: white;
 }
 
-
 #collapseProjects {
   background-color: none;
+}
+
+#Skills {
+  align-content: center;
 }
 
 .showItem {
@@ -71,7 +75,17 @@ i {
 }
 
 .main-project {
-  height: 500px;
+  height: 550px;
+}
+
+.skill-list {
+  padding-left: 5%;
+  border-left: 5px solid white;
+}
+
+.list-group-item {
+  background-color: transparent;
+  font-size: 20px;
 }
 
 .load-pics { 
