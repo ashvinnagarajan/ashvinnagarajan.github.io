@@ -130,7 +130,6 @@ i {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  background: none;
 }
 
 .card-img-top {
@@ -147,9 +146,9 @@ i {
 
 .pic-text {
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
-  background: none;
+  font-weight: bold;
 }
 
 .header-bar {
