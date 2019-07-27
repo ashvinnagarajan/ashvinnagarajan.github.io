@@ -19,15 +19,15 @@
 
         <!--Navbar-->
         <nav id="Top" class="navbar navbar-expand-lg navbar-dark header-bar">
-            <a class="navbar-brand" href="#Top" style="color:white;">A. Nagarajan</a>
+            <a class="navbar-brand" href="#Top">A. Nagarajan</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarColor01">
+            <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#signature-box">Home<span class="sr-only"></span></a>
+                    <a class="nav-link" href="#signature-box">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Facts">About Me</a>
@@ -56,7 +56,7 @@
         </div>  
         <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" id="Landing">       
             <div class="overlay welcome"> 
-                <h2 class="cover-heading" style="font-size: 45px;">Hello! My name is</h2>
+                <h2 style="font-size: 45px;">Hello! My name is</h2>
                 <h1 class="lead" style="font-size: 120px;">Ashvin Nagarajan</h1>
                 <br>
                 <h2 style="font-size: 35px;">I study Materials Science and Engineering</h2>
@@ -80,21 +80,21 @@
                     I recently created a website to serve as a personal <a style="color:white; text-decoration: underline;" href="https://ashvinnagarajan.github.io/blog/">blog.</a> I like to write about random thinkings so go check it out if you are interested!</p>
                 </p>
             </div>
-            <div class="card photo-card">
+            <div>
                 <img class="about-me" src="img/63.jpg"/>
             </div>
         </div>
         <!-- -->
 
         <!--Projects-->
-        <div class="container-fluid" style="padding: 4%; margin: 2% 7%; max-width: 84%;">
-            <h1 class="display-3" id="Projects" style="color: white; text-align: center; padding-bottom: 2%;">Projects</h1>
+        <div class="container-fluid project-container">
+            <h1 class="display-3" id="Projects">Projects</h1>
             <div class="row">
                 <div class="col-sm">
                         <div class="card main-project mb-3">
                             <h3 class="card-header">Super Mileage Vehicle</h3>
                             <a href="img/BruinRacing.jpg">
-                            <img style="height: 250px; width: 100%; display: block;" src="img/BruinRacing.jpg" alt="Bruin Racing image">
+                            <img class="img-project" src="img/BruinRacing.jpg" alt="Bruin Racing image">
                             </a>                           
                             <div class="card-body">
                                 <p class="card-text">
@@ -114,7 +114,7 @@
                     <div class="card main-project mb-3">
                         <h3 class="card-header">UberKuber</h3>     
                         <a href="img/BoozAllen.png">                
-                        <img style="height: 250px; width: 100%; display: block;" src="img/BoozAllen.png" alt="Booz Allen Hamilton image">
+                        <img class="img-project" src="img/BoozAllen.png" alt="Booz Allen Hamilton image">
                         </a>
                         <div class="card-body">
                             <p class="card-text">
@@ -135,7 +135,7 @@
                     <div class="card main-project mb-3">
                         <h3 class="card-header">Golden State Solar Car</h3>
                         <a href="img/GoldenState.png">
-                            <img style="height: 250px; width: 100%; display: block;" src="img/GoldenState.png" alt="Golden State Racing image">
+                            <img class="img-project" src="img/GoldenState.png" alt="Golden State Racing image">
                         </a>
                         <div class="card-body">
                             <p class="card-text">
@@ -154,7 +154,7 @@
                     <div class="card main-project mb-3">
                         <h3 class="card-header">Cush</h3>
                         <a href="img/Cush.png">
-                            <img style="height: 250px; width: 100%; display: block;" src="img/Cush.png" alt="Cush image">
+                            <img class="img-project" src="img/Cush.png" alt="Cush image">
                         </a>
                         <div class="card-body">
                             <p class="card-text">
@@ -178,7 +178,7 @@
                     </button>
                 </p>
                 <div class="collapse" id="collapseProjects">
-                    <div class="card-columns" style="color:black; background-color: transparent;">
+                    <div class="card-columns">
                         <div class="card past-project mb-3">
                             <h3 class="card-header">Bruin Space: Reach</h3>
                             <div class="card-body" >
@@ -241,16 +241,15 @@
         <!-- -->
 
         <!--Skills-->
-        <div class="jumbotron" id="Skills" style="margin: 4% 4% 10%;">
+        <div class="jumbotron" id="Skills">
             <div style="width: 60%; padding: 2%;">
-                <h1 class="display-3" style="text-align: center;">-- Skills --</h1>
+                <h1 class="display-3 text-center">-- Skills --</h1>
                 <div>
-                    <p class="lead" style="text-align: center;">
+                    <p class="lead text-center">
                         These are some of the things that I like to do
                     </p>  
                 </div>
                 <hr class="my-4">
-                
                 <div class="row link-list" >
                     <div class="col-sm">
                         <a class="link-item" href="./Resume.pdf"><i class="fa fa-pencil-alt"></i>Resume</a>
@@ -262,7 +261,6 @@
                         <a class="link-item" href="https://github.com/ashvinnagarajan/"><i class="fab fa-github"></i>GitHub</a>
                     </div>
                 </div>
-               
             </div>
             <div class="skill-list">
                 <ul class="list-group list-group-flush">
