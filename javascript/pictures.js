@@ -50,7 +50,7 @@ function append(img, container)
 {
     var tag = 
         "<div class=\"card pics-card\">" +
-            "<a href=\"" + img[0] + "\">" + 
+            "<a href=\"" + img.img_url + "\">" + 
                 "<img class=\"card-img-top\" alt=\"Sorry image not available\" style=\"height:100%;\" src=\"" + img.img_url + "\"/>" + 
 
                 "<div class=\"img-middle\" >" + 
