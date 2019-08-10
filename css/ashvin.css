@@ -1,11 +1,10 @@
 
 /* To change the amount of columns on larger devices, uncomment the code below */
 
-/* @media (min-width: 768px) and (max-width: 991px) {
-  .grid-sizer,
-  .grid-item {
-    width: 33.333%;
-  }
+@media (min-width: 768px) and (max-width: 991px) {
+ h1 {
+   font-size: 24px;
+ }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .grid-sizer,
@@ -14,16 +13,15 @@
   }
 }
 @media (min-width: 1200px) {
-  .grid-sizer,
-  .grid-item {
-    width: 20%;
+  h1 {
+    font-size: 24px;
   }
-} */
+}
 
 body {
   box-shadow: inset 0 0 50  rem rgba(0, 0, 0, .5);
   min-height: 100%;
-  background-image: linear-gradient(45deg, #e37682 15%, #5f4d93 85%)
+  background-image: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 }
 
 i {
@@ -32,10 +30,47 @@ i {
 
 .lead {
   font-size: 24px;
+  color: white;
+}
+
+.lead:hover {
+  color: white;
+}
+
+h1 {
+ font-size: 120px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 36px;
 }
 
 .card-header {
-  background-image: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.card-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.card-link:hover {
   color: white;
 }
 
@@ -44,6 +79,8 @@ i {
   background: none;
   color:white;
   margin-bottom: 0rem;
+  padding-top: 2px;
+  margin-top: 2px;
 }
 
 .header-bar {
@@ -63,6 +100,13 @@ i {
 
 .animation-box {
   z-index: 2;
+}
+
+svg {
+  width: 90%; 
+  height: 75%;
+  display: block;
+  margin: auto;
 }
 
 #signature-box {
@@ -174,6 +218,13 @@ path.animate {
 
 .show-more {
   margin: 20px;
+  color: #ffffff;
+  border: 2px solid white;
+}
+
+.show-more:hover {
+  background-color: #ffffff;
+  color: #e37682;
 }
 
 .showContainer {
@@ -198,7 +249,9 @@ path.animate {
 }
 
 .main-project {
-  height: 550px;
+  height: 500px;
+
+  box-shadow: 5px 10px 18px #514180;
 }
 
 .img-project {
@@ -241,6 +294,7 @@ path.animate {
 
 .load-pics { 
   margin: 20px;
+
 }
 
 .img-middle {
@@ -269,8 +323,12 @@ path.animate {
 .pic-text {
   color: black;
   font-size: 18px;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
+}
+
+.pic-hr {
+  border-color: #000000;
+  border-width: 1px;
 }
 
 .footer {

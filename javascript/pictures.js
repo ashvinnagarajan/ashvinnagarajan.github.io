@@ -50,19 +50,21 @@ function append(img, container)
 {
     var tag = 
         "<div class=\"card pics-card\">" +
-            "<a href=\"" + img.img_url + "\">" + 
+            "<a target=\"_blank\" href=\"" + img.img_url + "\"  \>" + 
                 "<img class=\"card-img-top\" alt=\"Sorry image not available\" style=\"height:100%;\" src=\"" + img.img_url + "\"/>" + 
 
                 "<div class=\"img-middle\" >" + 
                     "<div class=\"pic-text\">" + img.title + "</div>" + 
-                    "<hr/>" + 
+                    "<hr class=\"pic-hr\"  />" + 
                     "<div class=\"pic-text\">" + img.people + "</div>" + 
-                    "<hr/>" + 
+                    "<hr class=\"pic-hr\" />" + 
                     "<div class=\"pic-text\">" + img.date + "</div>" + 
                 "</div>" + 
             "</a>" +
         "</div>";
     $(container).append(tag);
+
+    disableBtn();
 }
 
 function populate()
@@ -102,6 +104,11 @@ function morePics(){
 
     timesClicked += 1;
 
+    populate();
+    main();
+}
+
+function disableBtn() {
     if ((timesClicked * appendArray.length) > initialLength)
     {
         arrayLength = 0;
@@ -109,7 +116,4 @@ function morePics(){
         document.getElementById("showItem").textContent = "No More Pictures";
         document.getElementById("showItem").disabled = true;
     }
-
-    populate();
-    main();
 }
