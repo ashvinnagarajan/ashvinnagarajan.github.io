@@ -331,6 +331,11 @@ path.animate {
   border-width: 1px;
 }
 
+.closing {
+  border: 2px solid white;
+  padding: 6px;
+}
+
 .footer {
   margin-right: 20px;
 }
