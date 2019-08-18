@@ -16,9 +16,5 @@ function moreProjects(){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    document.getElementById("Top").style.backgroundColor = "rgba(0,0,0,0.25)";
-  } else {
-    document.getElementById("Top").style.backgroundColor = "transparent";
-  }
+  document.getElementById("Top").style.backgroundColor = "initial";
 }

@@ -316,6 +316,10 @@ path.animate {
   transition: .5s ease;
 }
 
+.pics-card {
+  background-color: white;
+}
+
 .pics-card:hover .card-img-top {
   opacity: 0.4;
 }
