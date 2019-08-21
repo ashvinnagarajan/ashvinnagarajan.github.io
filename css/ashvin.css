@@ -36,6 +36,7 @@ i {
 .lead:hover {
   color: white;
 }
+
 /* 
 h1 {
  font-size: 8rem;
@@ -99,12 +100,11 @@ hr {
   text-align: center; 
   color: white;
   top: 100px;
-  z-index: 1;
 }
 
-.animation-box {
+/* .animation-box {
   z-index: 2;
-}
+} */
 
 svg {
   width: 90%; 
