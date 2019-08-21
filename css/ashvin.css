@@ -1,6 +1,12 @@
 @media only screen and (max-width: 600px) {
   svg {
-     display: none;
+     display: none !important;
+  }
+  .overlay{
+    position: static !important;
+  }
+  #Landing {
+    opacity: 1 !important;
   }
 }
 
@@ -79,22 +85,24 @@ hr {
   z-index: 2;
 } */
 
-svg {
+/* svg {
   width: 90%; 
   height: 75%;
   display: block;
   margin: auto;
-}
+} */
 
 #signature-box {
   padding: 0%;
   margin-top: 0%;
 }
 
-#Landing {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  animation: write5 7s 1 ease-in;
-  z-index: 1;
+@media only screen and (min-width: 600px) {
+  #Landing {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    animation: write5 7s 1 ease-in;
+    z-index: 1;
+  }
 }
 
 .overlay {
