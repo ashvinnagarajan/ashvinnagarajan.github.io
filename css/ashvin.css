@@ -38,10 +38,10 @@ hr {
   color: white;
   border-bottom: 1px solid white;
 }
-
+/* 
 .card-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
+} */
 
 .card {
   background-color: transparent;
@@ -78,7 +78,7 @@ hr {
   align-self: center;
   text-align: center; 
   color: white;
-  top: 100px;
+  top: 150px;
 }
 
 /* .animation-box {
@@ -196,7 +196,6 @@ path.animate {
 }
 
 .about-me {
-  max-height: 500px;
   border: 4px white;
   border-style: groove;
 }
