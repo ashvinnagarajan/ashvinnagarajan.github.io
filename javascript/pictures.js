@@ -9,7 +9,7 @@ var imgArray = [
     {img_url: "img/20.jpg", title: "Blue", people: "Ashvin, Mom, Praveen", date: "7/19/2017"},
     {img_url: "img/23.jpg", title: "Yosemite National Park", people: "Ashvin, Praveen", date: "8/11/2018"},
     {img_url: "img/24.jpg", title: "Golden Gate Bridge", people: "Ashvin, Praveen", date: "7/25/2017"},
-    {img_url: "img/25.jpg", title: "Golden Gate Bridge", people: "Ashvin", date: "7/25/2017"},
+    {img_url: "img/25.jpg", title: "Typical Tourist", people: "Ashvin", date: "7/25/2017"},
     {img_url: "img/26.jpg", title: "Verona Park", people: "Mom, Ashvin", date: "9/10/2017"},
     {img_url: "img/27.jpg", title: "Flannel Friends", people: "Jordan, Vincent, Ashvin", date: "7/14/2017"},
     {img_url: "img/29.jpg", title: "Student Council Board", people: "Ashvin, Charlee, Ben, Jess", date: "1/5/2018"},
