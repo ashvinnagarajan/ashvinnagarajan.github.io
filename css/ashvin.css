@@ -36,9 +36,9 @@ i {
 .lead:hover {
   color: white;
 }
-
+/* 
 h1 {
- font-size: 120px;
+ font-size: 8rem;
 }
 
 h2 {
@@ -47,7 +47,7 @@ h2 {
 
 h3 {
   font-size: 36px;
-}
+} */
 
 hr {
   border: 1px solid rgba(255,255,255,0.5);
@@ -90,15 +90,15 @@ hr {
 .header-bar {
   position: fixed;
   width: 100%;
-  max-height: 5%;
   z-index: 100;
+  padding-top: 0%;
 }
 
 .welcome {
   align-self: center;
   text-align: center; 
   color: white;
-  top: 180px;
+  top: 100px;
   z-index: 1;
 }
 
