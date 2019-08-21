@@ -11,9 +11,6 @@
   .display-1 {
     font-size: 4rem;
   }
-  .display-2 {
-    font-size: 3rem;
-  }
   .display-4 {
     font-size: 2rem;
   }
@@ -21,6 +18,10 @@
     border: none !important;
     text-align: center;
   }
+  .lead {
+    font-size: 18px !important;
+  }
+
 }
 
 body {
@@ -51,10 +52,10 @@ hr {
   color: white;
   border-bottom: 1px solid white;
 }
-/* 
+
 .card-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
-} */
+}
 
 .card {
   background-color: transparent;
@@ -65,6 +66,10 @@ hr {
 .card-link {
   color: white;
   text-decoration: underline;
+}
+
+.card-body {
+  overflow: auto;
 }
 
 .card-link:hover {
