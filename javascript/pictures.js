@@ -32,7 +32,6 @@ var imgArray = [
     {img_url: "img/58.jpg", title: "JCHS Varsity Tennis", people: "Ashvin", date: "4/26/2018"},
     {img_url: "img/59.jpg", title: "JCHS Varsity Tennis", people: "Ashvin", date: "4/26/2018"},
     {img_url: "img/62.jpg", title: "JCHS Graduation Ceremony", people: "JCHS Class of 2018", date: "6/22/2018"},
-    {img_url: "img/63.jpg", title: "Suited Up", people: "Ashvin", date: "5/17/2017"},
     {img_url: "img/1.png", title: "Eagle Court of Honor", people: "Dad, Ashvin, Mom", date: "12/20/2018"},
     {img_url: "img/2.png", title: "Eagle Court of Honor", people: "Ashvin, Jordan, J-B, Mr. Stevens", date: "12/20/2018"},
     {img_url: "img/3.png", title: "Eagle Court of Honor", people: "Ashvin", date: "12/20/2018"},
