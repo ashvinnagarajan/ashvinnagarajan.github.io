@@ -101,146 +101,18 @@
 
         <!--Projects-->
         <div class="container-fluid project-container">
-            <h3 class="display-3" id="Projects">Projects</h3>
-            <div class="row">
-                <div class="col-sm">
-                        <div class="card main-project mb-3">
-                            <h3 class="card-header">Super Mileage Vehicle</h3>
-                            <a href="img/BruinRacing.jpg">
-                                <img class="img-project" src="img/BruinRacing.jpg" alt="Bruin Racing image">
-                            </a>                           
-                            <div class="card-body">
-                                <p class="card-text">
-                                    SMV is building a racecar that consumes fuel as efficiently as possible. Currently I am developing a custom data acquisition system
-                                    to have real time data from the vehicle during a race. 
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://www.bruinracing.com/smv/" class="card-link">Bruin Racing | SMV</a>
-                                <span class="card-text float-right">2018 - 2019</span>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card main-project mb-3">
-                        <h3 class="card-header">UberKuber</h3>     
-                        <a href="img/BoozAllen.jpg">                
-                        <img class="img-project" src="img/BoozAllen.jpg" alt="Booz Allen Hamilton image">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">
-                                My team developed a cluster visualization tool for containerized applications using Kubernetes. Our product is an enterprise level tool to monitor the real time status of nodes and containers of a system. 
-                                We won 1st Place Overall out of 81 intern teams for our work. 
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://www.boozallen.com/" class="card-link">Booz Allen Hamilton</a>
-                            <span class="card-text float-right">2019</span>
-                        </div>
-                    </div>
-                </div>
+            <h3 class="display-3 projects-title" >Projects</h3>
+            <div class="card-columns project-columns" id="Projects">
+
             </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card main-project mb-3">
-                        <h3 class="card-header">Golden State Solar Car</h3>
-                        <a href="img/GoldenState.png">
-                            <img class="img-project" src="img/GoldenState.png" alt="Golden State Racing image">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">
-                                My team is designing a four-passenger solar-powered vehicle for entry in the 2019 Bridgestone World Solar Challenge. I run finite element analysis on the composite shell using MSC Apex and Ansys to ensure safety and design standards. 
-                            </p>
-                        </div>
-                        <div class="card-footer">                           
-                            <a href="https://goldenstatesolarteam.com/" class="card-link">Golden State Racing</a>
-                            <span class="card-text float-right">2018 - 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card main-project mb-3">
-                        <h3 class="card-header">Cush</h3>
-                        <a href="img/Cush.png">
-                            <img class="img-project" src="img/Cush.png" alt="Cush image">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text">
-                                At Cush, we are devloping a smart home bean bag that will communicate with other IOT devices like a Google home. Now you have the ability to control
-                                lighting, heating, and even a wireless charger inside the beanbag. 
-                            </p>
-                        </div>
-                        <div class="card-footer">                           
-                            <a href="https://uclacreatives.github.io/" class="card-link">UCLA Creative Labs</a>
-                            <span class="card-text float-right">2019</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="row showContainer" >
                 <p class="showItem">
                     <button class="btn show-more" id="moreProjects" onClick="moreProjects()" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="false" aria-controls="collapseExample">
                         More Projects
                     </button>
                 </p>
-                <div class="collapse" id="collapseProjects">
-                    <div class="card-columns">
-                        <div class="card past-project mb-3">
-                            <h3 class="card-header">Bruin Space: Reach</h3>
-                            <div class="card-body" >
-                                <p class="card-text">
-                                    In Bruin Space: Project Reach, we are developing a CubeSat with a modular payload to fly on an amateur rocket to about 30,000 feet. It contains state of art radio communication hardware and is controlled via an onboard Rasp Pi. I 3D modelling to create the chassis structure design according to very specific mass and volume budgets. 
-                                </p>
-                            </div>  
-                            <div class="card-body">
-                                <a href="https://www.bruinspace.com/" class="card-link">Bruin Space</a>
-                            </div>
-                        </div>
-                        <div class="card past-project mb-3">
-                            <h3 class="card-header">The Bruin Experiment</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    The Bruin Experiment is a volunteering organization dedicated to the mission of spreading knowledge to the next generation of scientists and researchers. We demonstrate experiments for middle school students in LA. The program culminates in a science fair at UCLA where the students show off their own research projects. 
-                                </p>
-                            </div>  
-                            <div class="card-body">
-                                <a href="https://www.palmsmiddleschool.org/the-bruin-experiment" class="card-link">The Bruin Experiment</a>
-                            </div>
-                        </div>
-                        <div class="card past-project mb-3">
-                            <h3 class="card-header">IdeaHacks | 1st Place Overall</h3>
-                            <div class="card-body" >
-                                <p class="card-text">
-                                    IdeaHacks is an annual hardware hackathon competition hosted at UCLA by Tao Beta Pi and IEEE. My team created a functioning smart lock that uses an RFID sensor to validate authorization. It used an industry standard ball bearing locking mechanism and we 3D printed a prototype housing that we designed ourselves. We earned first place overall against over 30 other teams.
-                                </p>
-                            </div>  
-                            <div class="card-body">
-                                <a href="http://www.ideahacks.la/" class="card-link">IdeaHacks</a>
-                            </div>
-                        </div>
-                        <div class="card past-project mb-3">
-                            <h3 class="card-header">Habitat for Humanity</h3>
-                            <div class="card-body" >
-                                <p class="card-text">
-                                    Habitat for Humanity was a large scale project designed to construct four walls of a home for a family who can't afford their own house. Along with three other students, I led efforts to fundraise over $4,000 and coordinate dozens of volunteers. It was first time ever held and it was the biggest service event of the year. 
-                                </p>
-                            </div>  
-                            <div class="card-body">
-                                <a href="https://www.habitat.org/" class="card-link">Habitat for Humanity</a>
-                            </div>
-                        </div>
-                        <div class="card past-project mb-3">
-                            <h3 class="card-header">Eagle Scout Project | Digitalization of Textiles</h3>
-                            <div class="card-body" >
-                                <p class="card-text">
-                                    As the culmination of my Boy Scouting career, I decided to work with the Historical Society of West Caldwell to create a digital collection of clothing articles. Some pieces, dating back to the 1700s, were carefully perserved in boxes but were unavailable for academic study. The digital archive allows for universal access. I earned my Eagle Scout award in June of 2016.
-                                </p>
-                            </div>  
-                            <div class="card-body">
-                                <a href="https://www.scouting.org/" class="card-link">Boy Scouts of America</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="collapse card-columns" id="collapseProjects">
                 </div>
             </div> 
         </div>
@@ -270,8 +142,9 @@
             </div>
             <div class="skill-list col-sm">
                 <ul class="list-group">
-                    <li class="list-group-item">Arduino and Microcontrollers</li>
-                    <li class="list-group-item">Web Dev | JS, React, Redux, Plotly</li>
+                    <li class="list-group-item">Microcontrollers and Embedded Systems</li>
+                    <li class="list-group-item">Web Dev | JavaScipt, React, Redux</li>
+                    <li class="list-group-item">Java, C++, Python, MatLab</li>
                     <li class="list-group-item">Computer Assisted Design</li>
                     <li class="list-group-item">Machining | Lathe, CNC, Mill</li>
                     <li class="list-group-item">Finite Element Analysis</li>

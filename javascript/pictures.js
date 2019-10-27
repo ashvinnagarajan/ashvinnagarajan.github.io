@@ -89,7 +89,7 @@ function randInt()
     return num;
 }
 
-function main() {
+function mainPics() {
     for(var i = 0; i < arrayLength; i++)
     {
         append(appendArray[i], picContainer);
@@ -97,14 +97,14 @@ function main() {
 }
 
 populate();
-main();
+mainPics();
 
 function morePics(){
 
     timesClicked += 1;
 
     populate();
-    main();
+    mainPics();
 }
 
 function disableBtn() {
