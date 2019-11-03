@@ -51,6 +51,18 @@ hr {
   border: 1px solid rgba(255,255,255,0.5);
 }
 
+.main-link {
+  color: white;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
+
+.main-link:hover {
+  color: white;
+  text-decoration: none;
+  text-decoration-skip: none;
+}
+
 .card-header {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
@@ -341,10 +353,10 @@ path.animate {
   border-width: 1px;
 }
 
-.closing {
+/* .closing {
   border: 2px solid white;
   padding: 6px;
-}
+} */
 
 .footer {
   margin-right: 20px;
