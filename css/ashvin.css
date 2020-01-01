@@ -1,18 +1,27 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:780px) {
   svg {
      display: none !important;
   }
   .overlay{
     position: static !important;
   }
-  #Landing {
-    opacity: 1 !important;
-  }
   .display-1 {
     font-size: 4rem;
   }
   .display-4 {
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width:992px) {
+  #Landing {
+    opacity: 1 !important;
+  }
+  .display-1 {
+    font-size: 4.5rem;
+  }
+  .display-4 {
+    font-size: 2.5rem;
   }
   .skill-list {
     border: none !important;
@@ -21,11 +30,21 @@
   .lead {
     font-size: 18px !important;
   }
-
 }
 
-.card-columns.project-columns {
-    column-count: 2;
+@media only screen and (min-width: 570px) {
+  #Landing {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    animation: write5 7s 1 ease-in;
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  /* For desktop: */
+  .card-columns.project-columns {
+      column-count: 2;
+  }
 }
 
 body {
@@ -112,7 +131,7 @@ hr {
   align-self: center;
   text-align: center; 
   color: white;
-  top: 150px;
+  top: 100px;
 }
 
 /* .animation-box {
@@ -129,14 +148,6 @@ hr {
 #signature-box {
   padding: 0%;
   margin-top: 0%;
-}
-
-@media only screen and (min-width: 600px) {
-  #Landing {
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    animation: write5 7s 1 ease-in;
-    z-index: 1;
-  }
 }
 
 .overlay {
@@ -267,7 +278,7 @@ path.animate {
 }
 
 .main-project {
-  height: 550px;
+  /* height: 550px; */
 
   box-shadow: 5px 10px 18px #514180;
 }
@@ -354,8 +365,8 @@ path.animate {
 }
 
 /* .closing {
-  border: 2px solid white;
-  padding: 6px;
+  width: 75%;
+  align-content: center;
 } */
 
 .footer {
