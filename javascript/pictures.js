@@ -33,7 +33,6 @@ var imgArray = [
     {img_url: "img/67.jpg", title: "SWE Banquet", people: "Ashvin, Annie, Allison, Juan, Matt", date: "5/4/2019"},
     {img_url: "img/68.jpg", title: "San Fransisco", people: "Parth, Ashvin, Param", date: "3/20/2019"},
     {img_url: "img/69.jpg", title: "The Bruin Experiment", people: "Ashvin", date: "4/20/2019"},
-    {img_url: "img/70.jpg", title: "Math League Competition", people: "JCHS Math Team", date: "1/24/2015"},
     {img_url: "img/71.jpg", title: "Booz Allen Hamilton", people: "Championship Team", date: "8/23/2019"},
     {img_url: "img/72.jpg", title: "Booz Allen Volunteering", people: "Interns", date: "7/24/2019"},
     {img_url: "img/73.jpg", title: "Washington DC Spy Museum", people: "Championship Team", date: "8/24/2019"},

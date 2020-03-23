@@ -19,11 +19,11 @@ function moreProjects(){
 
 var projectArray = [
     {projectName: "Super Mileage Vehicle", image: "img/BruinRacing.jpg", imageAlt: "SMV Image Not Available", 
-    projectText: "SMV is building a racecar that consumes fuel as efficiently as possible in order to claim the title of World's Most Efficient Vehicle. As the Research and Development Lead, I am responsible for mission critical projects that improve the efficiency of our automotive vehicle. I develop a unique data acquisition system that aggregates data from sensors around the vehicle and create mathematical models of the car using simulation software.", 
+    projectText: "SMV is building a racecar that consumes fuel as efficiently as possible in order to claim the title of World's Most Efficient Vehicle. As the Research and Development Lead, I am responsible for mission critical projects that improve the efficiency of our automotive vehicle. I developed a unique data acquisition system that aggregates data from sensors around the vehicle. Check it <a style=\"color:white; text-decoration: underline;\" href=\"dashboard\">out!</a>", 
     website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2019"},
 
     {projectName: "BR3W", image: "img/BR3W.jpg", imageAlt: "BR3W Image Not Available", 
-    projectText: "I am a Co-Project Manager for BR3W, a team that is developing a smart coffee machine that combines the customization of a cafe with the convenience of a Keurig. I manage a team of 10 hardware engineers as we construct a working prototype of the device and program a micro controller to control the machine from a mobile application (iOS + Android).", 
+    projectText: "I was a Co-Project Manager for BR3W, a team that developed a smart coffee machine that combines the customization of a cafe with the convenience of a Keurig. I managed a team of 10 engineers as we constructed a working prototype of the device and programed a micro controller to control the machine from a mobile application.", 
     website: "https://uclacreatives.github.io/", organization: "UCLA Creative Labs", date: "2019"},
 
     {projectName: "UberKuber", image: "img/BoozAllen.jpg", imageAlt: "Booz Allen Image Not Available", 
