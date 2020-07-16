@@ -20,11 +20,11 @@ function moreProjects(){
 var projectArray = [
     {projectName: "Super Mileage Vehicle", image: "img/BruinRacing.jpg", imageAlt: "SMV Image Not Available", 
     projectText: "SMV is building a racecar that consumes fuel as efficiently as possible in order to claim the title of World's Most Efficient Vehicle. As the Research and Development Lead, I am responsible for mission critical projects that improve the efficiency of our automotive vehicle. I developed a unique data acquisition system that aggregates data from sensors around the vehicle. I made a website to display our data live. Check it <a style=\"color:white; text-decoration: underline;\" href=\"dashboard\">out!</a>", 
-    website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2019"},
+    website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2020"},
     
     {projectName: "CHIPS Research Lab", image: "img/CHIPS.jpg", imageAlt: "CHIPS Image Not Available", 
     projectText: "In the CHIPS research lab, I am helping develop a prototype flexible gas sensor that can detect any changes in air quality for use in developing nations or for people with sensitivities to particulates. The sensor is small enough to fit within a watch or other wearable technologies. I primarily work on software programming so that the sensor can instantly communicate information to the user.", 
-    website: "https://chips.ucla.edu", organization: "CHIPS Research Lab", date: "2019"},
+    website: "https://chips.ucla.edu", organization: "CHIPS Research Lab", date: "2019-2020"},
 
     {projectName: "UberKuber", image: "img/BoozAllen.jpg", imageAlt: "Booz Allen Image Not Available", 
     projectText: "My team developed a cluster visualization tool for containerized applications using Kubernetes. It serves as an enterprise level tool to monitor the real time status of nodes and containers of a system. We won 1st Place Overall out of 81 teams judged by leadership at McLean HQ for providing insight on the health and performance of an infrastructure with a customizable UI for the needs of clients using React, Redux, JavaScript, and Enterprise Architect.", 

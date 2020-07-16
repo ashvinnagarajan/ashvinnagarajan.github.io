@@ -241,8 +241,7 @@ path.animate {
 }
 
 .about-me {
-  border: 4px white;
-  border-style: groove;
+  box-shadow: 5px 10px 18px #514180;
 }
 
 .show-more {
@@ -282,7 +281,6 @@ path.animate {
 }
 
 .img-project {
-  height: 250px; 
   width: 100%; 
   display: block;
 }
