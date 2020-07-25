@@ -40,11 +40,11 @@ var imgArray = [
     //{img_url: "img/11.jpg", title: "High School Graduation", people: "Ashvin, Yugantar", date: "6/22/18"},
     //{img_url: "img/14.jpg", title: "Ballin' Suit", people: "Baby Ashvin", date: "long time ago"},
     //{img_url: "img/15.jpg", title: "Celebratory Toast", people: "Mom, Praveen, Ashvin", date: "1/2/2016"},
-   //{img_url: "img/17.jpg", title: "Picnic in West Orange", people: "Mom, Praveen, Ashvin", date: "7/16/2016"},
+    //{img_url: "img/17.jpg", title: "Picnic in West Orange", people: "Mom, Praveen, Ashvin", date: "7/16/2016"},
     //{img_url: "img/23.jpg", title: "Yosemite National Park", people: "Ashvin, Praveen", date: "8/11/2018"},
     //{img_url: "img/26.jpg", title: "Verona Park", people: "Mom, Ashvin", date: "9/10/2017"},
     //{img_url: "img/40.jpg", title: "Prom", people: "Friends", date: "6/1/2018"},
-   //{img_url: "img/56.jpg", title: "Study Time", people: "Juan, Ashvin", date: "10/21/2016"},
+    //{img_url: "img/56.jpg", title: "Study Time", people: "Juan, Ashvin", date: "10/21/2016"},
     //{img_url: "img/2.png", title: "Eagle Court of Honor", people: "Ashvin, Jordan, J-B, Mr. Stevens", date: "12/20/2018"},
     
 
