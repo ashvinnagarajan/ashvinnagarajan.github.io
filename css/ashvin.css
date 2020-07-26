@@ -45,6 +45,12 @@
   .card-columns.project-columns {
       column-count: 2;
   }
+  .card-columns.media-columns {
+    column-count: 2;
+  }
+  .card-columns.pic-columns {
+    column-count: 4;
+  }
 }
 
 body {
@@ -275,7 +281,7 @@ path.animate {
   padding-bottom: 2%;
 }
 
-.main-project {
+.project {
   box-shadow: 5px 10px 18px #514180;
 }
 
@@ -316,9 +322,26 @@ path.animate {
   font-size: 20px;
 }
 
+.media-container {
+  width: 90%;
+}
+
+.media {
+  height: 160px;
+  overflow: hidden;
+  border-top: 3px solid #514180 ;
+}
+
+.img-media {
+  height: 150px;
+}
+
+.media-body {
+  color: white;
+}
+
 .load-pics { 
   margin: 20px;
-
 }
 
 .img-middle {

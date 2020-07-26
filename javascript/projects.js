@@ -4,8 +4,8 @@ function moreProjects(){
     if (clickCount % 2 === 0){
         document.getElementById("moreProjects").textContent = "Show Fewer";
 
-        for(var i = 0; i < moreArray.length; i++) {
-            appendMore(moreArray[i], moreContainer);
+        for(var i = 0; i < moreProjArray.length; i++) {
+            appendMoreProj(moreProjArray[i], moreContainer);
         }
     }
     else {
@@ -33,11 +33,9 @@ var projectArray = [
     {projectName: "UberKuber", image: "img/BoozAllen.jpg", imageAlt: "Booz Allen Image Not Available", 
     projectText: "My team developed a cluster visualization tool for containerized applications using Kubernetes. It serves as an enterprise level tool to monitor the real time status of nodes and containers of a system. We won 1st Place Overall out of 81 teams judged by leadership at McLean HQ for providing insight on the health and performance of an infrastructure with a customizable UI for the needs of clients using React, Redux, JavaScript, and Enterprise Architect.", 
     website: "https://www.boozallen.com/", organization: "Booz Allen Hamilton", date: "2019"},
-      
-    
 ]
 
-var moreArray = [
+var moreProjArray = [
     {projectName: "Cush", image: "img/Cush.png", imageAlt: "Cush Image Not Available", 
     projectText: "At Cush, we developed a smart home bean bag that communicate with other IOT devices like a Google home. Now you have the ability to control lighting, heating, and even a wireless charger inside the beanbag from a convenient mobile app.", 
     website: "https://uclacreatives.github.io/", organization: "UCLA Creative Labs", date: "2019"},
@@ -74,10 +72,10 @@ var moreArray = [
 var projectContainer = "#Projects";
 var moreContainer = "#collapseProjects";
 
-function appendMain(project, container)
+function appendProj(project, container)
 {
     var tag = 
-            "<div class=\"card main-project mb-3\">" + 
+            "<div class=\"card main-project project mb-3\">" + 
                 "<h3 class=\"card-header\">" + project.projectName + "</h3>" + 
                 "<a href=\"" + project.image + "\" \>" + 
                     "<img class=\"img-project\" alt=\"Sorry image not available\" src=\"" + project.image + "\"/>" + 
@@ -93,9 +91,9 @@ function appendMain(project, container)
     $(container).append(tag);
 }
 
-function appendMore(project, container) {
+function appendMoreProj(project, container) {
     var tag = 
-        "<div class=\"card past-project mb-3\">" + 
+        "<div class=\"card past-project project mb-3\">" + 
             "<h3 class=\"card-header\">" + project.projectName + "</h3>" + 
             "<div class=\"card-body\">" + 
                 "<p class=\"card-text\">" + 
@@ -113,7 +111,7 @@ function appendMore(project, container) {
 function mainProjects() {
     for(var i = 0; i < projectArray.length; i++)
     {
-        appendMain(projectArray[i], projectContainer);
+        appendProj(projectArray[i], projectContainer);
     }
 }
 

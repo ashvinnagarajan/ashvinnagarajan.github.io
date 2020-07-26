@@ -104,9 +104,7 @@
         <div class="container-fluid project-container">
             <h3 class="display-3 projects-title" >Projects</h3>
             <div class="card-columns project-columns" id="Projects">
-
             </div>
-
             <div class="row showContainer" >
                 <p class="showItem">
                     <button class="btn show-more" id="moreProjects" onClick="moreProjects()" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="false" aria-controls="collapseExample">
@@ -158,41 +156,27 @@
         </div>
         <!-- -->
 
-        <!--Awards-->
-        <div hidden="true" class="jumbotron" id="Awards">
-            <div style="width: 60%; padding: 2%;">
-                <h3 class="display-3 text-center">&mdash; Awards &mdash;</h3>
-                <div>
-                    <p class="lead text-center">
-                        These are some of the things I have earned 
-                    </p>  
+        <!--Media-->
+        <div class="container-fluid showContainer media-container" id="Media">
+            <h1 class="display-3" style="color: white; text-align: center;">Media</h1>
+            <div class="card-columns media-columns list-unstyled" id="media">
+            </div> 
+            <div class="row showContainer" >
+                <p class="showItem">
+                    <button class="btn show-more" id="moreMedia" onClick="moreMedia()" type="button" data-toggle="collapse" data-target="#collapseMedia" aria-expanded="false" aria-controls="collapseExample">
+                        More Media
+                    </button>
+                </p>
+                <div class="collapse card-columns" id="collapseMedia">
                 </div>
-                <hr class="my-4">
-                <div class="row link-list" >
-                    <div class="col-sm">
-                        <a class="link-item" href="./Resume.pdf"><i class="far fa-file"></i>Resume</a>
-                    </div>
-                    <div class="col-sm">
-                        <a class="link-item" href="https://www.linkedin.com/in/ashvin-nagarajan/"><i class="fab fa-linkedin"></i>LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-            <div class="skill-list">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">1st Place Booz Allen Hamilton<br>Summer Intern Competition</li>
-                    <li class="list-group-item">Eagle Scout Award</li>
-                    <li class="list-group-item">1st Place IdeaHacks Hardware Hackathon</li>
-                    <li class="list-group-item">National Merit Scholar</li>
-                    <li class="list-group-item">Engineering Dean's List</li>
-                </ul>
-            </div>
-        </div>
+            </div> 
+        </div>  
         <!-- -->
 
         <!--Contains all of the Pictures-->
         <div class="container-fluid showContainer" id="Pictures">
-            <h1 class="display-3" style="color: white; text-align: center;">Pictures</h1>
-            <div class="card-columns" id="pics">
+            <h1 class="display-3" style="color: white; text-align: center;">Photo Gallery</h1>
+            <div class="card-columns pic-columns" id="pics">
             </div> 
 
             <button type="button" onClick="morePics()" id="showItem" class="btn load-pics show-more showItem">Show More Images</button>
@@ -243,5 +227,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="javascript/pictures.js"></script>
         <script src="javascript/projects.js"></script>
+        <script src="javascript/media.js"></script>
     </body>
 </html>
