@@ -1,24 +1,5 @@
-var clickCount = 0;
-
-function moreProjects(){
-    if (clickCount % 2 === 0){
-        document.getElementById("moreProjects").textContent = "Show Fewer";
-
-        for(var i = 0; i < moreProjArray.length; i++) {
-            appendMoreProj(moreProjArray[i], moreContainer);
-        }
-    }
-    else {
-        document.getElementById("moreProjects").textContent = "More Projects";
-        
-        document.getElementById("moreProjects").empty();
-    }
-
-    clickCount += 1;    
-}
-
 var projectArray = [
-    {projectName: "Super Mileage Vehicle", image: "img/BruinRacing.jpg", imageAlt: "SMV Image Not Available", 
+    {projectName: "Bruin SuperMileage EV", image: "img/BruinRacing.jpg", imageAlt: "SMV Image Not Available", 
     projectText: "Super Mileage Vehicle at Bruin Racing is a student run organization that manufactures an automotive vehicle to attain the highest possible energy efficiency for the Shell Eco-Marathon competition. As Tech Director, I directly oversee five subsystems: Electrical, Powertrain, Structures, Steering, and R&D. I prioritize projects that our 40+ engineers should pursue and ensure that they are completed effectively. Currently managing 10+ projects including Data Acquisition System, Joulemeter, and BLDC Motor Controller. ", 
     website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2020"},
     
@@ -113,6 +94,25 @@ function mainProjects() {
     {
         appendProj(projectArray[i], projectContainer);
     }
+}
+
+var clickCount = 0;
+
+function moreProjects(){
+    if (clickCount % 2 === 0){
+        document.getElementById("moreProjects").textContent = "Show Fewer";
+
+        for(var i = 0; i < moreProjArray.length; i++) {
+            appendMoreProj(moreProjArray[i], moreContainer);
+        }
+    }
+    else {
+        document.getElementById("moreProjects").textContent = "More Projects";
+        
+        document.getElementById("moreProjects").empty();
+    }
+
+    clickCount += 1;    
 }
 
 mainProjects();
