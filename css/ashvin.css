@@ -100,7 +100,7 @@ hr {
 .card {
   background-color: transparent;
   color: white;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .card-link {
@@ -324,7 +324,7 @@ path.animate {
 
 .media-container {
   width: 90%;
-  box-shadow: 5px 10px 18px #834e54;
+  /* box-shadow: 5px 10px 18px #834e54; */
   margin-bottom: 5rem;
 }
 
@@ -364,7 +364,6 @@ path.animate {
 .pics-card {
   background-color: white;
   box-shadow: 5px 10px 18px #834e54;
-
 }
 
 .pics-card:hover .card-img-top {
