@@ -1,20 +1,20 @@
 var projectArray = [
     {
-        projectName: "Bruin SuperMileage EV", image: "img/BruinRacing.jpg", imageAlt: "SMV Image Not Available",
-        projectText: "Super Mileage Vehicle at Bruin Racing is a student run organization that manufactures an automotive vehicle to attain the highest possible energy efficiency for the Shell Eco-Marathon competition. As Tech Director, I directly oversee five subsystems: Electrical, Powertrain, Structures, Steering, and R&D. I prioritize projects that our 40+ engineers should pursue and ensure that they are completed effectively. Currently managing 10+ projects including Data Acquisition System, Joulemeter, and BLDC Motor Controller. ",
-        website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2020"
-    },
-
-    {
-        projectName: "CHIPS Research Lab", image: "img/CHIPS.jpg", imageAlt: "CHIPS Image Not Available",
-        projectText: "In the CHIPS research lab, I worked with a postdoc to develop a prototype flexible gas sensor that can detect any changes in air quality for use as a personal environment monitor. The sensor is small enough to be embedded within a watch, construction mask, or other wearable technologies. I developed the software so that the sensor can communicate information to the user via Bluetooth Low Energy at a frequency of 2 kHz. I also created a JavaScript website to demo the Bluetooth information in real time. Our work was recently published at the 2020 IEEE ECTC conference.",
-        website: "https://chips.ucla.edu", organization: "CHIPS Research Lab", date: "2019 - 2020"
+        projectName: "Microsoft", image: "img/Microsoft.jpg", imageAlt: "Microsoft Image Not Available",
+        projectText: "I implemented a smart meeting suggestions algorithm on Outlook Scheduling to support attendee required status. I added a parallel API workflow to consider meeting suggestions with and without optional attendees. I designed and implemented the front end changes in React to display the meeting suggestions to users. I deployed the solution to Microsoft dogfood and launched A/B testing flights to compare user behavior. Finally, I built telemetry monitoring dashboards to track utilization metrics.",
+        website: "https://www.microsoft.com/en-us/", organization: "Microsoft", date: "2021"
     },
 
     {
         projectName: "Cisco Systems", image: "img/Cisco.jpg", imageAlt: "Cisco Image Not Available",
         projectText: "I worked remotely on the WebEx Teams platform, a product that is used by millions of users every day for video conferencing. I created a service to leverage AWS cloud and Kubernetes infrastructure to dynamically scale resources based on anticipated traffic. I wrote a API that returns predictive data based on an additive regression ML model. I communicated between teams in San Jose and London to ensure that application specific requirements were met. In addition, I also created an internal debug tool that displays the route of media from endpoints in Python.",
         website: "https://www.cisco.com/", organization: "Cisco Systems", date: "2020"
+    },
+
+    {
+        projectName: "Bruin SuperMileage EV", image: "img/BruinRacing.jpg", imageAlt: "SMV Image Not Available",
+        projectText: "Super Mileage Vehicle at Bruin Racing is a student run organization that manufactures an automotive vehicle to attain the highest possible energy efficiency for the Shell Eco-Marathon competition. As Tech Director, I directly oversee five subsystems: Electrical, Powertrain, Structures, Steering, and R&D. I prioritize projects that our 40+ engineers should pursue and ensure that they are completed effectively. Currently managing 10+ projects including Data Acquisition System, Joulemeter, and BLDC Motor Controller. ",
+        website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2021"
     },
 
     {
@@ -25,6 +25,12 @@ var projectArray = [
 ]
 
 var moreProjArray = [
+    {
+        projectName: "CHIPS Research Lab", image: "img/CHIPS.jpg", imageAlt: "CHIPS Image Not Available",
+        projectText: "In the CHIPS research lab, I worked with a postdoc to develop a prototype flexible gas sensor that can detect any changes in air quality for use as a personal environment monitor. The sensor is small enough to be embedded within a watch, construction mask, or other wearable technologies. I developed the software so that the sensor can communicate information to the user via Bluetooth Low Energy at a frequency of 2 kHz. I also created a JavaScript website to demo the Bluetooth information in real time. Our work was recently published at the 2020 IEEE ECTC conference.",
+        website: "https://chips.ucla.edu", organization: "CHIPS Research Lab", date: "2019 - 2020"
+    },
+
     {
         projectName: "Cush", image: "img/Cush.png", imageAlt: "Cush Image Not Available",
         projectText: "At Cush, we developed a smart home bean bag that communicate with other IOT devices like a Google home. Now you have the ability to control lighting, heating, and even a wireless charger inside the beanbag from a convenient mobile app.",
