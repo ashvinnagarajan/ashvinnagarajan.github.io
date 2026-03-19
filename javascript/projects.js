@@ -1,18 +1,23 @@
 var projectArray = [
     {
-        projectName: "Microsoft", image: "img/Microsoft.jpg", imageAlt: "Microsoft Image Not Available",
-        projectText: "I implemented a smart meeting suggestions algorithm on Outlook Scheduling to support attendee required status. I added a parallel API workflow to consider meeting suggestions with and without optional attendees. I designed and implemented the front end changes in React to display the meeting suggestions to users. I deployed the solution to Microsoft dogfood and launched A/B testing flights to compare user behavior. Finally, I built telemetry monitoring dashboards to track utilization metrics.",
-        website: "https://www.microsoft.com/en-us/", organization: "Microsoft", date: "2021"
+        projectName: "Stealth Startup", image: "img/stealth.png", imageAlt: "Stealth Startup",
+        projectText: "Currently building something new. More details coming soon.",
+        website: "#", organization: "Stealth", date: "2025 - Present"
     },
     {
-        projectName: "Cisco Systems", image: "img/Cisco.jpg", imageAlt: "Cisco Image Not Available",
-        projectText: "I worked remotely on the WebEx Teams platform, a product that is used by millions of users every day for video conferencing. I created a service to leverage AWS cloud and Kubernetes infrastructure to dynamically scale resources based on anticipated traffic. I wrote a API that returns predictive data based on an additive regression ML model. I communicated between teams in San Jose and London to ensure that application specific requirements were met. In addition, I also created an internal debug tool that displays the route of media from endpoints in Python.",
-        website: "https://www.cisco.com/", organization: "Cisco Systems", date: "2020"
+        projectName: "Applied Intuition", image: "img/AppliedIntuition.jpg", imageAlt: "Applied Intuition",
+        projectText: "As an Infrastructure Software Engineer, I built cloud security tooling, optimized multi-cloud Kubernetes clusters with 5k+ nodes for vehicle simulations, and developed authentication services supporting SSO and multi-tenancy. I also onboarded air-gapped government and commercial customers.",
+        website: "https://www.appliedintuition.com/", organization: "Applied Intuition", date: "2024 - 2025"
+    },
+    {
+        projectName: "Microsoft", image: "img/Microsoft.jpg", imageAlt: "Microsoft Image Not Available",
+        projectText: "As a Software Engineer on Outlook, I created performant CRUD APIs for Hybrid Working Hours, built scope dashboards tracking global usage across 300M+ users, and led privacy, compliance, and security reviews to launch features and expand to government cloud. I also implemented a diagnostics item crawler to validate and repair mailboxes with invalid Work Hours data.",
+        website: "https://www.microsoft.com/en-us/", organization: "Microsoft", date: "2022 - 2024"
     },
     {
         projectName: "Bruin SuperMileage EV", image: "img/BruinRacing.jpg", imageAlt: "SMV Image Not Available",
-        projectText: "Super Mileage Vehicle at Bruin Racing is a student run organization that manufactures an automotive vehicle to attain the highest possible energy efficiency for the Shell Eco-Marathon competition. As Tech Director, I directly oversee five subsystems: Electrical, Powertrain, Structures, Steering, and R&D. I prioritize projects that our 40+ engineers should pursue and ensure that they are completed effectively. Currently managing 10+ projects including Data Acquisition System, Joulemeter, and BLDC Motor Controller. ",
-        website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2021"
+        projectText: "As Team Director of Bruin Racing, I led 50+ engineers to design and manufacture an electric vehicle achieving 130+ mi/kwh, 50x better than a Tesla Model 3. I developed an embedded data acquisition system with a React pit crew interface for real-time telemetry and raised $42k through grants to fund the annual operating budget, a 300% increase compared to 2020.",
+        website: "https://www.bruinracing.com/smv/", organization: "Bruin Racing | SMV", date: "2018 - 2022"
     },
     {
         projectName: "UberKuber", image: "img/BoozAllen.jpg", imageAlt: "Booz Allen Image Not Available",
@@ -22,6 +27,11 @@ var projectArray = [
 ];
 
 var moreProjArray = [
+    {
+        projectName: "Cisco Systems", image: "img/Cisco.jpg", imageAlt: "Cisco Image Not Available",
+        projectText: "I worked on the WebEx Teams platform, used by millions of users every day for video conferencing. I created a service to leverage AWS cloud and Kubernetes infrastructure to dynamically scale resources based on anticipated traffic. I wrote an API that returns predictive data based on an additive regression ML model and created an internal debug tool that displays the route of media from endpoints in Python.",
+        website: "https://www.cisco.com/", organization: "Cisco Systems", date: "2020"
+    },
     {
         projectName: "CHIPS Research Lab", image: "img/CHIPS.jpg", imageAlt: "CHIPS Image Not Available",
         projectText: "In the CHIPS research lab, I worked with a postdoc to develop a prototype flexible gas sensor that can detect any changes in air quality for use as a personal environment monitor. The sensor is small enough to be embedded within a watch, construction mask, or other wearable technologies. I developed the software so that the sensor can communicate information to the user via Bluetooth Low Energy at a frequency of 2 kHz. I also created a JavaScript website to demo the Bluetooth information in real time. Our work was recently published at the 2020 IEEE ECTC conference.",
@@ -71,12 +81,17 @@ var moreProjArray = [
 
 function createProjectCard(project) {
     var hasImage = project.image && project.image.length > 0;
-    var imageHtml = hasImage
-        ? '<img class="project-card__img" src="' + project.image + '" alt="' + project.imageAlt + '" loading="lazy">'
-        : '';
+    var hasVideo = project.video && project.video.length > 0;
+    var mediaHtml = '';
+
+    if (hasVideo) {
+        mediaHtml = '<video class="project-card__video" src="' + project.video + '" autoplay muted loop playsinline></video>';
+    } else if (hasImage) {
+        mediaHtml = '<img class="project-card__img" src="' + project.image + '" alt="' + project.imageAlt + '" loading="lazy">';
+    }
 
     return '<div class="project-card reveal">' +
-        imageHtml +
+        mediaHtml +
         '<div class="project-card__body">' +
             '<h3 class="project-card__title">' + project.projectName + '</h3>' +
             '<p class="project-card__text">' + project.projectText + '</p>' +

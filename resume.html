@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume - Ashvin Nagarajan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.35;
+      color: #222;
+      background: #f5f5f5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 8.5in;
+      min-height: 11in;
+      max-height: 11in;
+      margin: 0 auto;
+      background: #fff;
+      padding: 0.45in 0.55in 0.45in 0.55in;
+      overflow: hidden;
+    }
+
+    @media screen {
+      .page {
+        margin: 20px auto;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+      }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+
+    /* ---- Header ---- */
+    .header {
+      text-align: center;
+      padding-bottom: 7px;
+      border-bottom: 2px solid #2089c7;
+      margin-bottom: 12px;
+    }
+
+    .header__name {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24pt;
+      font-weight: 400;
+      color: #2089c7;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .header__contact {
+      font-size: 9.5pt;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header__contact a {
+      color: #2089c7;
+      text-decoration: none;
+    }
+
+    .header__contact a:hover {
+      text-decoration: underline;
+    }
+
+    .header__icon {
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
+
+    /* ---- Section ---- */
+    .section {
+      margin-bottom: 10px;
+    }
+
+    .section__title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12.5pt;
+      font-weight: 400;
+      color: #2089c7;
+      margin-bottom: 5px;
+    }
+
+    /* ---- Education ---- */
+    .edu {
+      margin-bottom: 2px;
+    }
+
+    .edu__school {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .edu__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu__degree {
+      font-size: 10pt;
+    }
+
+    .edu__date {
+      font-size: 10pt;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    /* ---- Experience ---- */
+    .job {
+      margin-bottom: 9px;
+    }
+
+    .job__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .job__title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .job__date {
+      font-size: 10pt;
+      color: #555;
+      white-space: nowrap;
+    }
+
+    .job__tech {
+      font-size: 9pt;
+      color: #2089c7;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+
+    .job__bullets {
+      list-style: none;
+      padding: 0;
+    }
+
+    .job__bullets li {
+      padding-left: 16px;
+      position: relative;
+      font-size: 10pt;
+      line-height: 1.4;
+      margin-bottom: 1px;
+    }
+
+    .job__bullets li::before {
+      content: '\2666';
+      position: absolute;
+      left: 2px;
+      color: #2089c7;
+      font-size: 7pt;
+      top: 2px;
+    }
+
+    /* ---- Skills ---- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 40px;
+      font-size: 10pt;
+    }
+
+    /* ---- Awards ---- */
+    .awards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 40px;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <h1 class="header__name">Ashvin Nagarajan</h1>
+      <div class="header__contact">
+        <span>ashvinagarajan@gmail.com</span>
+        <span>||</span>
+        <a href="https://ashvin.dev">https://ashvin.dev</a>
+        <span>||</span>
+        <a href="https://linkedin.com/in/ashvin-nagarajan/">linkedin.com/in/ashvin-nagarajan/</a>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2 class="section__title">Education:</h2>
+      <div class="edu" style="margin-bottom: 6px;">
+        <div class="edu__school">Harvard Business School</div>
+        <div class="edu__row">
+          <span class="edu__degree">M.B.A Masters of Business Administration &nbsp; GPA: <strong>In Progress</strong></span>
+          <span class="edu__date">Aug 2025 &ndash; May 2027</span>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu__school">University of California, Los Angeles (UCLA)</div>
+        <div class="edu__row">
+          <span class="edu__degree">M.S. Materials Science and Engineering &nbsp; GPA: <strong>3.99</strong> / 4.00</span>
+          <span class="edu__date">Jan 2021 &ndash; June 2022</span>
+        </div>
+        <div class="edu__row">
+          <span class="edu__degree">B.S. Materials Science and Engineering &nbsp; GPA: <strong>3.99</strong> / 4.00</span>
+          <span class="edu__date">Sept 2018 &ndash; June 2022</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+      <h2 class="section__title">Work Experience:</h2>
+
+      <div class="job">
+        <div class="job__header">
+          <span class="job__title">Applied Intuition | Infrastructure Software Engineer</span>
+          <span class="job__date">July 2024 &ndash; *</span>
+        </div>
+        <div class="job__tech">Go, Python, gRPC, Kubernetes, AWS, GCP, Azure</div>
+        <ul class="job__bullets">
+          <li>Founded Cloud Security team implementing SAST testing, access requests, vuln analysis, and audits</li>
+          <li>Optimized multi-cloud Kubernetes clusters with 5k+ nodes for high throughput vehicle simulations</li>
+          <li>Developed authentication service with support for Single Sign-on, logical multi-tenancy, and SCIM</li>
+          <li>Onboarded air-gapped commercial and government customers with unique security requirements</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job__header">
+          <span class="job__title">Microsoft | Software Engineer</span>
+          <span class="job__date">Sept 2022 &ndash; July 2024</span>
+        </div>
+        <div class="job__tech">C#, gRPC, REST, Cosmos DB, Substrate, Azure</div>
+        <ul class="job__bullets">
+          <li>Created performant CRUD APIs to allow user to create and interact with Hybrid Working Hours items</li>
+          <li>Built scope dashboards to track global usage, currently over 300M users, and gather data insights</li>
+          <li>Led privacy, compliance, and security reviews to launch feature and expand to government cloud</li>
+          <li>Implemented diagnostics item crawler to validate and repair mailboxes with invalid Work Hours</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job__header">
+          <span class="job__title">Bruin SuperMileage Electric | Team Director</span>
+          <span class="job__date">2018 &ndash; 2022</span>
+        </div>
+        <div class="job__tech">Project Management, Accounting, Python, Arduino, FEA, Scrum</div>
+        <ul class="job__bullets">
+          <li>Designed and manufactured electric vehicle with 130+ mi/kwh, 50x better than Tesla Model 3</li>
+          <li>Developed embedded data acquisition system w/ React pit crew interface for real-time telemetry</li>
+          <li>Facilitated project transition to road-safe, dual-motor electric vehicle for the team of 50+ engineers</li>
+          <li>Raised $42k through grants to fund the annual operating budget, 300% increase compared to 2020</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job__header">
+          <span class="job__title">Microsoft | Software Engineering Intern</span>
+          <span class="job__date">Summer 2021</span>
+        </div>
+        <ul class="job__bullets">
+          <li>Implemented meeting suggestions algorithm on Outlook Scheduling for optional attendees</li>
+          <li>Shipped solution to Microsoft testing and launched A/B testing experiments to study user behavior</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job__header">
+          <span class="job__title">Heal | Product Management Intern</span>
+          <span class="job__date">Jan 2021 &ndash; April 2021</span>
+        </div>
+        <ul class="job__bullets">
+          <li>Defined requirements and user stories for Adherence Alerts on Remote Patient Monitoring platform</li>
+          <li>Expanded Clinical and Operations tool to surface real-time alerts on patient monitoring data</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2 class="section__title">Skills:</h2>
+      <div class="skills-grid">
+        <div>Python, Java, Go, C++, C#</div>
+        <div>Cloud Infrastructure</div>
+        <div>Agile and Scrum</div>
+        <div>Web and Mobile App Development</div>
+        <div>API Design</div>
+        <div>Cloud Security</div>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <div class="section">
+      <h2 class="section__title">Awards and Honors:</h2>
+      <div class="awards-grid">
+        <div>Finalist, Sandler Prize for New Entrepreneurs</div>
+        <div>UCLA Sharpe Fellow</div>
+        <div>UCLA Outstanding BS + MS Award 2022</div>
+        <div>Eagle Scout &ndash; Boy Scout Troop 6</div>
+        <div>1st Place Booz Allen Summer Games 2019</div>
+        <div>Published author &ndash; 2020 IEEE ECTC</div>
+        <div>1st Place IdeaHacks Hackathon 2019</div>
+        <div>Disney Imaginations Semifinalist 2020</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
